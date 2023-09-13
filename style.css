@@ -33,6 +33,7 @@ a:visited {
   color: var(--almost-black);
   text-decoration: none;
 }
+
 p {
   line-height: 35px;
   margin: 25px 0;
@@ -52,12 +53,17 @@ p {
   border-radius: 20px;
   transition: 200ms ease;
   font: 700 0.7rem "TitilliumWeb";
+  user-select: none;
 }
 
 .button:hover,
-footer li:hover {
+footer a:hover {
   color: var(--turquoise);
   border: 1px solid var(--turquoise);
+}
+
+footer a:hover {
+  color: var(--turquoise);
 }
 
 .section1,
@@ -71,7 +77,7 @@ body {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -230,7 +236,7 @@ ul {
   margin: 0 auto;
 }
 
-li {
+footer a {
   display: flex;
   border: 1px solid var(--light-grey);
   padding: 20px;
@@ -242,6 +248,7 @@ li {
   font-size: 1rem;
   transition: all 200ms ease;
 }
+/* **************** RESPONSIVE **************** */
 
 @media screen and (max-width: 650px) {
   header,
@@ -251,7 +258,7 @@ li {
   }
 
   header {
-    height: 100%;
+    min-height: 80vh;
   }
   .container {
     padding: 20px;
