@@ -285,11 +285,4 @@ footer a {
   .grid-form {
     width: 100%;
   }
-
-  li {
-    font-size: 0.8rem;
-    padding: 15px;
-    height: 15px;
-    width: 15px;
-  }
 }
