@@ -57,7 +57,9 @@ p {
 }
 
 .button:hover,
-footer a:hover {
+.button:active,
+footer a:hover,
+footer a:active {
   color: var(--turquoise);
   border: 1px solid var(--turquoise);
 }
